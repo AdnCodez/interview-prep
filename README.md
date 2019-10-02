@@ -51,7 +51,7 @@ Feel free to raise PRs to enrich this repo with more questions (Don't forget to 
     6. The browser sends requests for additional objects embedded in HTML (images, css, JavaScript) and repeats steps 3-5.
 Once the page is loaded, the browser sends further async requests as needed.
 5. ### Apart from the task queue, what other queues are there in browser? 
-    1. Render queue and microtask queue - for resolving promises.They do have a priority as well.
+     Render queue and microtask queue - for resolving promises.They do have a priority as well.
 6. ### If we define a class in JS using arrow functions and without using class keyword, would it work?
      Answer To be added
 7. ### Describe ES6 features and properties.
