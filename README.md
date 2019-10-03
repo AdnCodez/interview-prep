@@ -53,15 +53,17 @@ Once the page is loaded, the browser sends further async requests as needed.
 5. ### Apart from the task queue, what other queues are there in browser? 
      Render queue and microtask queue - for resolving promises.They do have a priority as well.
 6. ### If we define a class in JS using arrow functions and without using class keyword, would it work?
-     Answer To be added
+     This wouldn't work. because it will not only throw a syntax SyntaxError(" `${name}` is not a constructor"). but semantically, a class
+     need to set its 'this' context to all functions and variables inside it. Arrow functions this context is set to its parent (surrounding code) and not its children/itself.
 7. ### Describe ES6 features and properties.
      Answer To be added
 8. ### How does virtual DOM works in React? Talk about React Fibre, the reconciliation algorithm of react.
      Answer To be added
 9. ### What is event loop and how does it work?
-    For solution, refer to below links.
-    https://www.youtube.com/watch?v=cCOL7MC4Pl0
-    https://www.youtube.com/watch?v=8aGhZQkoFbQ
+   > For solution, refer to below links.
+
+    [![loop](http://img.youtube.com/vi/cCOL7MC4Pl0/0.jpg)](http://www.youtube.com/watch?v=cCOL7MC4Pl0 "Jake Archibald: In The Loop - JSConf.Asia")
+    [![event loop](http://img.youtube.com/vi/8aGhZQkoFbQ/0.jpg)](http://www.youtube.com/watch?v=8aGhZQkoFbQ "What is event loop?")
 10. ### Difference between state and props
      Answer To be added
 11. ### Why we need key in react lists? What happens if we provide the index as the key ?
@@ -71,17 +73,23 @@ Once the page is loaded, the browser sends further async requests as needed.
 13. ### What are controlled and uncontrolled inputs in React ?
      Answer To be added
 14. ### What is a closure? How can it be used ?
-     Answer To be added
+     closures gives access to an outer function's scope from an inner function.
+     it is a mechanism used to enable data privacy
 15. ### Why do we need redux? Why can't we just use a global state?
      Answer To be added
 16. ### Event Propogation and Event bubbling?
-     Answer To be added
+     Event propagation is a mechanism that defines how events propagate or travel through the DOM tree to arrives at its target and what happens to it afterward.
+     Event bubbling is a type of event propagation where the event first triggers on the deepest target element. It causes all events in the child nodes to be automatically passed to its parent nodes. The advantage of this method is speed because the code only requires to traverse the DOM tree once.
 17. ### Difference between debouncing and throttling?
      Answer To be added
 18. ### Difference between call, apply and bind?
-     Answer To be added
+     Call/apply call the function immediately, whereas bind returns a function that, when later executed.
+     Use .bind() when you want that function to later be called with a certain context, useful in events. Use .call() or .apply() when you want to invoke the function immediately, and modify the context.
 19. ### What is async and await. What does a async function return?
-     Answer To be added
+     Async and Await are extensions of promises.
+     Async functions enable us to write promise based code as if it were synchronous, 
+     but without blocking the execution thread by operating asynchronously via the event-loop.
+     Await makes JavaScript wait until the promise returns a result.
 20. ### What is a Higher Order Component ? Give example and explain the use cases where it should be used.
      Answer To be added
 21. ### How to deep clone a object in javascript ?
